@@ -1,0 +1,42 @@
+info:
+  title: foot
+  version: "1"
+  x-lastModified: May 12, 2017 05:24AM PST
+paths:
+  /ip:
+    delete:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    get:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    patch:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    post:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    put:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+swagger: "2.0"
