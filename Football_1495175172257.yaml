@@ -1,0 +1,227 @@
+definitions:
+  GiveNewSchemaNameHere:
+    properties:
+      In method:
+        default: Patch
+        type: string
+      alos:
+        default: pa
+        type: string
+    type: object
+  post:
+    properties:
+      details:
+        properties:
+          Author:
+            default: Sir Richard
+            type: string
+          edition:
+            default: 2017
+            type: integer
+          name:
+            default: The Arabian Noghts
+            type: string
+          publisher:
+            default: Wiley Press
+            type: string
+        type: object
+      id:
+        default: 11
+        type: integer
+    type: object
+info:
+  title: Football
+  version: 1.0.0
+  x-lastModified: May 18, 2017 23:10PM PST
+paths:
+  /{id}:
+    delete:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    get:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+          schema:
+            items:
+              type: string
+            type: array
+    patch:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - default: 1
+        description: "1"
+        format: int32
+        in: header
+        name: ss
+        required: false
+        type: integer
+      - description: ""
+        format: ""
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: ""
+        format: text
+        in: formData
+        name: file
+        required: true
+        type: file
+      - default: file
+        description: ""
+        format: text
+        in: formData
+        name: file1
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+          examples:
+            application/json:
+              In method: Patch
+              alos: pa
+          schema:
+            $ref: '#/definitions/GiveNewSchemaNameHere'
+    post:
+      parameters:
+      - default: q1
+        description: wqeq
+        format: ""
+        in: query
+        name: q1
+        required: false
+        type: string
+      - description: ""
+        format: ""
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+          examples:
+            application/json:
+              details:
+                Author: Sir Richard
+                edition: 2017
+                name: The Arabian Noghts
+                publisher: Wiley Press
+              id: 11
+          schema:
+            $ref: '#/definitions/post'
+      tags:
+      - tag2
+      - tag
+    put:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+  /p:
+    delete:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    get:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    patch:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    post:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    put:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+  /q:
+    delete:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    get:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    patch:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    post:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    put:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+swagger: "2.0"
