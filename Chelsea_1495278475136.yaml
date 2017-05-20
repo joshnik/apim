@@ -1,0 +1,220 @@
+info:
+  title: Chelsea
+  version: "1.1"
+  x-lastModified: May 20, 2017 04:05AM PST
+paths:
+  /{id}:
+    delete:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    patch:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    put:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+  /{id2}:
+    delete:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id2
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    get:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id2
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    patch:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id2
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    post:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id2
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    put:
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: id2
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+  /g:
+    delete:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    get:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    patch:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    post:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    put:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+  /p:
+    delete:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    get:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    patch:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    post:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    put:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+  /y:
+    delete:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    get:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    patch:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    post:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+    put:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+swagger: "2.0"
