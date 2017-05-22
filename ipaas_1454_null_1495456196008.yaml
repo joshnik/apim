@@ -1,0 +1,292 @@
+definitions:
+  DeleteResponse:
+    properties:
+      Book:
+        items:
+          properties:
+            authorName:
+              type: "null"
+            description:
+              type: "null"
+            id:
+              type: "null"
+            isbn:
+              type: "null"
+            name:
+              type: "null"
+            price:
+              default: 0
+              type: integer
+            releaseDate:
+              default: 2012-01-01
+              format: date
+              type: string
+            signed:
+              default: false
+              type: boolean
+            vintage:
+              default: false
+              type: boolean
+          type: object
+        type: array
+    type: object
+  GetResponse:
+    properties:
+      Book:
+        items:
+          properties:
+            authorName:
+              type: "null"
+            description:
+              type: "null"
+            id:
+              type: "null"
+            isbn:
+              type: "null"
+            name:
+              type: "null"
+            price:
+              default: 0
+              type: integer
+            releaseDate:
+              default: 2012-01-01
+              format: date
+              type: string
+            signed:
+              default: false
+              type: boolean
+            vintage:
+              default: false
+              type: boolean
+          type: object
+        type: array
+    type: object
+  PostRequest:
+    properties:
+      Book:
+        items:
+          properties:
+            authorName:
+              type: "null"
+            description:
+              type: "null"
+            id:
+              type: "null"
+            isbn:
+              type: "null"
+            name:
+              type: "null"
+            price:
+              default: 0
+              type: integer
+            releaseDate:
+              default: 2012-01-01
+              format: date
+              type: string
+            signed:
+              default: false
+              type: boolean
+            vintage:
+              default: false
+              type: boolean
+          type: object
+        type: array
+    type: object
+  PostResponse:
+    properties:
+      Book:
+        items:
+          properties:
+            authorName:
+              type: "null"
+            description:
+              type: "null"
+            id:
+              type: "null"
+            isbn:
+              type: "null"
+            name:
+              type: "null"
+            price:
+              default: 0
+              type: integer
+            releaseDate:
+              default: 2012-01-01
+              format: date
+              type: string
+            signed:
+              default: false
+              type: boolean
+            vintage:
+              default: false
+              type: boolean
+          type: object
+        type: array
+    type: object
+  PutRequest:
+    properties:
+      Book:
+        items:
+          properties:
+            authorName:
+              type: "null"
+            description:
+              type: "null"
+            id:
+              type: "null"
+            isbn:
+              type: "null"
+            name:
+              type: "null"
+            price:
+              default: 0
+              type: integer
+            releaseDate:
+              default: 2012-01-01
+              format: date
+              type: string
+            signed:
+              default: false
+              type: boolean
+            vintage:
+              default: false
+              type: boolean
+          type: object
+        type: array
+    type: object
+  PutResponse:
+    properties:
+      Book:
+        items:
+          properties:
+            authorName:
+              type: "null"
+            description:
+              type: "null"
+            id:
+              type: "null"
+            isbn:
+              type: "null"
+            name:
+              type: "null"
+            price:
+              default: 0
+              type: integer
+            releaseDate:
+              default: 2012-01-01
+              format: date
+              type: string
+            signed:
+              default: false
+              type: boolean
+            vintage:
+              default: false
+              type: boolean
+          type: object
+        type: array
+    type: object
+info:
+  title: ipaas_1454_null
+  version: 1.0.0
+  x-lastModified: Dec 02, 2016 04:14AM PST
+paths:
+  /null:
+    delete:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+          examples:
+            application/json:
+              Book:
+              - authorName: null
+                description: null
+                id: null
+                isbn: null
+                name: null
+                price: 0
+                releaseDate: 2012-01-01
+                signed: false
+                vintage: false
+          schema:
+            $ref: '#/definitions/DeleteResponse'
+    get:
+      parameters: []
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+          examples:
+            application/json:
+              Book:
+              - authorName: null
+                description: null
+                id: null
+                isbn: null
+                name: null
+                price: 0
+                releaseDate: 2012-01-01
+                signed: false
+                vintage: false
+          schema:
+            $ref: '#/definitions/GetResponse'
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: ""
+        in: body
+        name: body
+        schema:
+          $ref: '#/definitions/PostRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+          examples:
+            application/json:
+              Book:
+              - authorName: null
+                description: null
+                id: null
+                isbn: null
+                name: null
+                price: 0
+                releaseDate: 2012-01-01
+                signed: false
+                vintage: false
+          schema:
+            $ref: '#/definitions/PostResponse'
+    put:
+      consumes:
+      - application/json
+      parameters:
+      - description: ""
+        in: body
+        name: body
+        schema:
+          $ref: '#/definitions/PutRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+          examples:
+            application/json:
+              Book:
+              - authorName: null
+                description: null
+                id: null
+                isbn: null
+                name: null
+                price: 0
+                releaseDate: 2012-01-01
+                signed: false
+                vintage: false
+          schema:
+            $ref: '#/definitions/PutResponse'
+swagger: "2.0"
