@@ -1,0 +1,254 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "HelloWorld",
+    "x-lastModified": "Sep 06, 2017 05:00AM PST",
+    "description": "Descritpin"
+  },
+  "paths": {
+    "/String/{name}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            },
+            "examples": {
+              "application/json": {
+                "Hello": "World"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "Query parameter",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "getString_name"
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/formgot"
+            },
+            "examples": {
+              "application/json": {
+                "Form submitted": "Done"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "operationId": "postString_name"
+      }
+    }
+  },
+  "definitions": {
+    "TibcoResponse": {
+      "type": "object",
+      "properties": {
+        "Response is": {
+          "type": "string",
+          "default": "Hello Tibco"
+        }
+      }
+    },
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "Customers": {
+          "type": "object",
+          "properties": {
+            "Customer": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "CustomerID": {
+                    "type": "integer",
+                    "default": 2
+                  },
+                  "CompanyName": {
+                    "type": "string",
+                    "default": "Great Lakes Food Market2"
+                  },
+                  "ContactName": {
+                    "type": "string",
+                    "default": "Howard Snyder2"
+                  },
+                  "ContactTitle": {
+                    "type": "string",
+                    "default": "Marketing Manager2"
+                  },
+                  "Phone": {
+                    "type": "string",
+                    "default": "(503) 555-7555"
+                  },
+                  "Fax": {
+                    "type": "string",
+                    "default": "(503) 555-7555"
+                  },
+                  "FullAddress": {
+                    "type": "object",
+                    "properties": {
+                      "CustomerID": {
+                        "type": "integer",
+                        "default": 2
+                      },
+                      "Address": {
+                        "type": "string",
+                        "default": "2732 Baker Blvd."
+                      },
+                      "City": {
+                        "type": "string",
+                        "default": "Eugene"
+                      },
+                      "Region": {
+                        "type": "string",
+                        "default": "OR"
+                      },
+                      "PostalCode": {
+                        "type": "string",
+                        "default": "97403"
+                      },
+                      "Country": {
+                        "type": "string",
+                        "default": "USA"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Orders": {
+          "type": "object",
+          "properties": {
+            "Order": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "CustomerID": {
+                    "type": "integer",
+                    "default": 2
+                  },
+                  "EmployeeID": {
+                    "type": "integer",
+                    "default": 67
+                  },
+                  "OrderDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "default": "1997-05-06T00:00:00Z"
+                  },
+                  "RequiredDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "default": "1997-05-20T00:00:00Z"
+                  },
+                  "ShipInfo": {
+                    "type": "object",
+                    "properties": {
+                      "ShippedDate": {
+                        "type": "string",
+                        "format": "date-time",
+                        "default": "1997-05-20T00:00:00Z"
+                      },
+                      "ShipVia": {
+                        "type": "integer",
+                        "default": 2
+                      },
+                      "Freight": {
+                        "type": "number",
+                        "default": 3.35
+                      },
+                      "ShipName": {
+                        "type": "string",
+                        "default": "Great Lakes Food Market"
+                      },
+                      "ShipAddress": {
+                        "type": "string",
+                        "default": "2732 Baker Blvd."
+                      },
+                      "ShipCity": {
+                        "type": "string",
+                        "default": "Eugene"
+                      },
+                      "ShipRegion": {
+                        "type": "string",
+                        "default": "OR"
+                      },
+                      "ShipPostalCode": {
+                        "type": "string",
+                        "default": "97403"
+                      },
+                      "ShipCountry": {
+                        "type": "string",
+                        "default": "USA"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "formgot": {
+      "type": "object",
+      "properties": {
+        "Form submitted": {
+          "type": "string",
+          "default": "Done"
+        }
+      }
+    }
+  }
+}
